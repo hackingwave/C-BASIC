@@ -1,0 +1,57 @@
+//   question 4::
+ 
+ 
+ /*Theory:: program that returns 'x' with n digit that begin at position 'p' inverted ,
+ leaving the others unchanged*/
+ 
+ 
+
+/*PROGRAM LOGIC ::  we took the number x,
+then the value p .
+now we divided the x into two parts left_half that is to be  reversed and 
+the right_half that is to be  left unchanged
+1) we applied loop to the right_half and reversed the number
+2) we applied loop to  the left_half and reversed the number
+3) in third loop, we kept the  reversed left_half as it is and , again reversed ,the reversed the right_half 
+and appended it to the left_half */
+
+#include<stdio.h>
+int main(){
+       
+       int n,p;
+       printf("take the input 'x' and the number 'p'\n");
+       scanf("%d %d",&n,&p);
+       
+       int right_half=0;
+       p--;
+       while(p>0)
+       {
+              right_half=right_half*10 + n%10;
+              n/=10;
+              p--;
+       }
+       
+       int left_half=0;
+       
+       while(n>0)
+       {
+              left_half=left_half*10 + n%10;
+              n/=10;
+       }
+       
+       
+       while(right_half > 0)
+       {
+              left_half=left_half*10 + right_half%10;
+              right_half/=10;
+       }
+       printf("%d\n",left_half);
+       
+       
+       return 0;
+}
+
+
+
+
+       
