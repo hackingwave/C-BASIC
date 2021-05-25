@@ -1,0 +1,48 @@
+//   question 2::the program to make following exchanges a-->b-->c-->a.
+ 
+ 
+ 
+ //THEORY::
+ 
+ //swappping the three(a,b,c) numbers.
+ // b is to assume the value of a.
+ // c is to assume the value of b.
+ // a is to assume the value of c.
+
+//PROGRAM LOGIC ::
+
+/* at first , we swapped the values of a and b.
+now a=b and b=a(requied) .
+now ,
+we swapped the values of b and c
+so, c=a (required) and a=c( a was equal to b, this implies c=b (required)
+hence; b=a,c=b,a =c*/
+
+
+
+
+#include<stdio.h>
+int main (){
+       int a, b, c;
+       printf(" enter the first number\n");
+       scanf("%d",&a);
+       printf(" enter the second  number\n");
+       scanf("%d",&b);
+       printf(" enter the  third number\n");
+       scanf("%d",&c);
+       printf(" all the three numbers are\n");
+       printf("%d\n",a);
+       printf("%d\n",b);
+       printf("%d\n",c);
+       a=a+b;
+       b=a-b;
+       a=a-b;
+       a=a+c;
+       c=a-c;
+       a=a-c;
+       printf(" now, the new changed numbers are \n");
+       printf("%d\n",a);
+       printf("%d\n",b);
+       printf("%d\n",c);
+       return 0;
+}
