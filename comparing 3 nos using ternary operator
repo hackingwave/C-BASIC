@@ -1,0 +1,39 @@
+//   question 3::
+ 
+ 
+ /*Theory:: we have given the 3 numbers and we have to find the
+ greatest and the smallest number among them*/
+ 
+ 
+
+/*PROGRAM LOGIC ::   we took the input of 3 numbers and then by using ternary operator
+we compared the first two numbers.
+now ,we found the greatest/smallest(result1) among the first two numbers AND now
+we compared this result1 with the third number.*/
+
+#include<stdio.h>
+int main(){
+       int a,b,c,max1,max2,greatest;
+       printf(" enter the three numbers to find the greatest and smallest  number\n");
+       scanf("%d",&a);
+       scanf("%d",&b);
+       scanf("%d",&c);
+       max1=a>b?a :b;
+       max2=max1>c?max1:c;
+       printf(" greatest number is %d\n",max2);
+       
+       
+       printf(" the smallest number is  ");
+       int small1,small2;
+       small1=a<b? a:b;
+       small2=small1<c? small1:c;
+       printf("%d  ",small2);
+       
+       
+       return 0;
+}
+
+
+
+
+       
