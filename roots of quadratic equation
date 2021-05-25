@@ -1,0 +1,35 @@
+// question ::5
+
+
+/*theory ::finding the roots of the quadratic equation of the 
+form ax^2+ bx +c.*/
+
+
+/* PROGRAM LOGIC :; FIRST , we are tAKING  the input i.e the cofficients a,b ,c.
+now simply finding the determinant by using the formulla(d=sqrt((b*b)-(4*a*c))
+as we know if d>=0 then the roots will be real otherwise imaginary,so using if-else
+statement for this.
+also by formulla , roots of quadratic equation= (-b+d)/2a and (-b-d)/2a.*/
+
+
+
+#include<stdio.h>
+#include<math.h>
+int main(){
+       printf(" enter the cofficient  a,b c ");
+    float a,b,c,d,root_1,root_2;
+   scanf("%f%f%f",&a,&b,&c);
+   d=sqrt((b*b)-(4*a*c));
+   
+   root_1=((-b) +d)/(2*a);
+   root_2=((-b) -d)/(2*a);
+   if(d>=0){
+   printf("%f",root_1);
+   printf("%f",root_2);
+   }
+   else
+   {
+          printf(" no real roots");
+   }
+       return 0;
+}
