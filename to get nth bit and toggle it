@@ -1,0 +1,45 @@
+//question:: 7
+
+//theory :: to get nth bit and toggle nth bit.
+
+
+
+/* theory ::
+First of all a mask is created having only nth bit as set bit by using inbuilt pow function.
+
+Firstly, Bitwise AND operation is performed between given number(num) and mask.
+If this value is greater than 0 it means nth bit is set else not set.
+
+Afterwards, Bitwise XOR is performed between given number(num) and mask. 
+This will simply toggle the nth bit .
+*/
+
+
+
+#include <stdio.h>
+#include<math.h>
+
+int main()
+{
+    
+    
+    int num,n;
+    printf("Enter the number : ");
+    scanf("%d",&num);
+    
+    printf("Enter the value of n : ");
+    scanf("%d",&n);
+    
+    
+    int mask=pow(2,n-1);
+    int nthbit=0;
+    
+    if(mask&num)
+      nthbit=1;
+    
+    printf("Nth bit is : %d \n",nthbit);
+    printf("Toggled bit is : %d \n",mask^num);
+    
+   
+    return 0;
+}
