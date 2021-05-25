@@ -1,0 +1,29 @@
+// question ::6
+
+
+/*theory ::/*taking a float value x and printing two integers which are
+just smaller and greater than x.*/
+
+
+/* PROGRAM LOGIC :;  first we are taking the input i.e the float value of x 
+and then simply using the concept of "typecasting".
+using typecasting , converting float datatype to integer and hence it will 
+ignore the value after decimal point and will get   just smaller number.
+
+now  x+1 will increase its value by one and again converting it to integer datatype,we get
+the just greater number.*/
+
+
+
+#include<stdio.h>
+int main (){
+float x;
+scanf("%f",&x);
+printf("%d\n %d",(int)x,(int)x+1);
+       
+       
+
+
+   
+       return 0;
+}
