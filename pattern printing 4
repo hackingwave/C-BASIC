@@ -1,0 +1,47 @@
+output===
+4
+
+ 4  8  12  16 
+
+ 3  6  9  12 
+
+ 2  4  6  8 
+
+ 1  2  3  4 
+
+
+
+
+
+
+
+
+
+#include<stdio.h>
+#include<conio.h>
+int main(){
+       int j,i,n;
+       scanf("%d",&n);
+       for(i=n; i>0;i--)
+       {
+              
+             
+              for(j=1;j<=n;j++)
+              {
+             
+              printf(" %d ",j*i);
+              
+       
+              }
+              
+              printf("\n");
+              
+              
+       }
+        
+        
+       
+       
+       
+       return 0;
+}
