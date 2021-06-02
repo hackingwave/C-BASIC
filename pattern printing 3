@@ -1,0 +1,52 @@
+output====
+5
+
+ABCDE
+
+BCDE
+
+CDE
+
+DE
+
+E
+
+
+
+
+
+
+
+
+
+
+
+
+#include<stdio.h>
+#include<conio.h>
+int main(){
+       int j,i,n;
+       scanf("%d",&n);
+       for(i=1; i<=n;i++)
+       {
+              
+             
+              for(j=i; j>=i && j<=n;j++)
+              {
+             
+              printf("%c",j+64);
+              
+              
+              }
+              
+              printf("\n");
+              
+              
+       }
+        
+        
+       
+       
+       
+       return 0;
+}
