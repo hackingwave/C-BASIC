@@ -1,0 +1,74 @@
+#include<stdio.h>
+int main()
+{
+       int n;
+       printf("enter the size of array\n");
+       scanf("%d",&n);
+       printf("enter the values of array\n");
+       int array[n];
+         for(int i=0;i<n;i++)
+         {
+
+              scanf("%d",&array[i]) ; 
+              
+         }
+         
+         printf("the given array is\n");
+         for(int i=0;i<n;i++)
+         {
+
+              printf(" %d ",array[i]) ;               
+         }
+         printf("\n");
+         printf("now this original array is to be split into two array of sizes\n");
+       
+       int count1=0,count2=0;
+       int A[n],B[n];
+       
+       for(int i=0;i<n;i++)
+         {
+
+              if(array[i]>=10){
+              A[count1]=array[i];
+                     count1++;
+              }
+              else if (array[i]<10){
+              B[count2]=array[i];
+              count2++;}
+         }
+         
+         
+        printf("%d    %d",count1,count2);
+        printf("\n");
+        for(int i=0; i<count1;i++)
+        {
+               printf(" %d ",A[i]);
+        }
+         printf("\n");
+         for(int i=0; i<count2;i++)
+        {
+               printf(" %d ",B[i]);
+        }
+         
+         
+       return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
