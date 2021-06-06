@@ -1,0 +1,40 @@
+#include<stdio.h>
+int main()
+{
+       int n,element,location;
+       scanf("%d",&n);
+       int array[n];
+         for(int i=0;i<n;i++)
+         {
+
+              scanf("%d",&array[i]) ;               
+         }
+         for(int i=0;i<n;i++)
+         {
+
+              printf(" %d ",array[i]) ;               
+         }
+         printf("\n");
+       
+       scanf("%d",&location);
+       
+       printf("\n");
+       
+        for(int i=n-1;i>=location;i--)
+        {
+               array[i+1]=array[i];
+        }
+       scanf("%d",&element);
+       
+       array[location]=element;
+       
+        for(int i=0;i<=n;i++)
+         {
+
+              printf(" %d ",array[i]) ;               
+         }
+       
+       
+       
+       return 0;
+}
